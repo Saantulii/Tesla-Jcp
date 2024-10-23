@@ -8,10 +8,6 @@ body{
     background-color: white;
 }
 
-h1{
-    text-aling:center:
-}
-
 .article-container {
     position: relative; /* Permite posicionar elementos dentro del artículo */
     width: 100%; /* Ancho del contenedor */
