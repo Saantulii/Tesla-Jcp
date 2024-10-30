@@ -2,7 +2,9 @@ const pagesData = {
     "index.html": [
         "¡Bienvenidos a Tesla José C. Paz! Nos complace recibirte en nuestra comunidad educativa.",
         "En nuestra institución, creemos en la formación integral de nuestros estudiantes.",
-        "Fomentamos la curiosidad intelectual y el pensamiento crítico."
+        "Fomentamos la curiosidad intelectual y el pensamiento crítico.",
+        "inicio",
+        "Ubicación: José C. Paz, Buenos Aires",
     ],
     "cursos.html": [
         "Cursos del Colegio Técnico",
@@ -82,14 +84,38 @@ const pagesData = {
         "Tesla José C. Paz tiene una historia de excelencia educativa.",
         "Nuestro equipo docente está comprometido con el desarrollo personal y profesional de los estudiantes.",
         "Estamos aquí para ayudarte en todo lo que necesites.",
-        "Ubicación: José C. Paz, Buenos Aires"
+        "Ubicación: José C. Paz, Buenos Aires",
+        "Historia del Colegio",
+        "Misión y Visión",
+        "Valores Institucionales",
+        "Equipo Docente",
+        "Infraestructura",
+        "Actividades y Programas",
+        "Testimonios",
+        "Contacto",
+        "Fotografías",
+        "Logros y Reconocimientos",
     ],
+
     "calendario.html": [
         "Calendario",
         "Feriado",
         "Días festivos del Colegio",
-        "Trasladables"
+        "Trasladables",
+        "Enero",
+        "Febrero",
+        "Marzo",
+        "Abril",
+        "Mayo",
+        "Junio",
+        "Julio",
+        "Agosto",
+        "Septiembre",
+        "Octubre",
+        "Noviembre",
+        "Diciembre"
     ],
+
     "cd.html": [
         "Centro de estudiantes",
         "Nuestras Propuestas",
