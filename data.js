@@ -123,6 +123,7 @@ const pagesData = {
     ],
     "login.html": [
         "Iniciar sesión",
-        "Registrarse"
+        "Registrarse",
+        "login",
     ]
 };
