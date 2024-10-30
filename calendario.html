@@ -38,6 +38,12 @@
     </header>
 
     <h2>Calendario 2024</h2>
+
+    <div class="botons">
+       <p> <button id="rojo">a</button>Feriado</p>
+        <p><button id="verde">a</button>Dias festivos del Colegio</p>
+        <P><button id="amarillo">a</button>Trasladables</P>
+    </div>
     <div class="calendar">
         <div class="month" id="month1">
             <h2>Enero</h2>
@@ -156,12 +162,12 @@
                 <div class="day">21</div>
                 <div class="day">22</div>
                 <div class="day">23</div>
-                <div class="feriado" onclick="showMoferiado('Día Nacional de la Memoria por la Verdad y la Justicia')">24</div>
+                <div class="feriado" onclick="showModal('Día Nacional de la Memoria por la Verdad y la Justicia')">24</div>
                 <div class="day">25</div>
                 <div class="day">26</div>
                 <div class="day">27</div>
-                <div class="feriado" onclick="showMoferiado('Jueves Santo Festividad Catolica')">28</div>
-                <div class="feriado" onclick="showMoferiado('Viernes Santo Festividad Catolica')">29</div>
+                <div class="feriado" onclick="showModal('Jueves Santo Festividad Catolica')">28</div>
+                <div class="feriado" onclick="showModal('Viernes Santo Festividad Catolica')">29</div>
                 <div class="day">30</div>
                 <div class="day">31</div>
             </div>
@@ -551,6 +557,11 @@
     </div>
 </div>
 
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Calendario - Tesla</p>
+</footer>
+
 <!-- Modal -->
 <div id="modal" class="modal" style="display: none;">
     <div class="modal-content">
@@ -559,10 +570,7 @@
         <p id="modal-description"></p>
     </div>
 
-         <!-- Footer -->
-         <footer>
-            <p>&copy; 2024 Calendario - Tesla</p>
-        </footer>
+       
 
 </div>
 </body>
