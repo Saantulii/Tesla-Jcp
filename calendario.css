@@ -27,6 +27,49 @@ h2 {
     text-align: center;
 }
 
+.botons{
+    border:none ;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.botons p{
+    border: none;
+    color: black;
+    font-size: 25px;
+}
+
+
+#rojo{
+    background-color: red;
+    padding: 10px;
+    border: 2px solid red;
+    border-radius: 0px;
+    margin-top: 0px;
+    color: red;
+}
+
+
+#verde{
+    background-color: green;
+    padding: 10px;
+    border: 2px solid green;
+    border-radius: 0px;
+    margin-top: 0px;
+    color: green;
+}
+
+#amarillo{
+    background-color: yellow;
+    padding: 10px;
+    border: 2px solid yellow;
+    border-radius: 0px;
+    margin-top: 0px;
+    color: yellow;
+}
+
+
 .calendar {
     display: flex;
     flex-wrap: wrap;
@@ -120,4 +163,12 @@ h2 {
     color: black;
     text-decoration: none;
     cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+    margin-top: 40px;
 }
