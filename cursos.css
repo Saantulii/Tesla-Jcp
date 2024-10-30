@@ -35,10 +35,21 @@ h2 {
     padding: 0;
 }
 .divisions li {
-    background: #e9ecef;
+    background: #000000;
     margin: 5px 0;
     padding: 10px;
     border-radius: 4px;
     color: black;
     font-family: Arial Black;
 }
+.divisions li:hover{
+    background-color: aqua;
+    color: black;
+}
+
+li a{
+    color: white;
+    text-decoration: none;
+    text-decoration-color: none;
+}
+
