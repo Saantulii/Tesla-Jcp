@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="cursos.css">
+    <link rel="stylesheet" href="search.css">
+    <script src="data.js" defer></script>
+    <script src="NODE.js" defer></script>
     <link rel="icon" href="tesla escudo.jpg" type="image/x-icon">
     <title>Tesla - Cursos</title>
 </head>
@@ -19,6 +22,23 @@
                 <img src="person-add-sharp.svg" alt="imagen de inico de sesion"></button>    
             </a>
         </div>
+
+        <div class="search-container">
+            <input class="input" type="text" placeholder="Buscar...">
+            <svg viewBox="0 0 24 24" class="search__icon" id="search-button" style="cursor: pointer;">
+                <g>
+                    <path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 
+                    9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 
+                    3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 
+                    7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path>
+                </g>
+            </svg>
+            <p class="search-message" style="display: none; color: red;">
+                La búsqueda no ha sido encontrada, ¡intente de nuevo, por favor!
+                <button class="close-message" style="background: none; border: none; color: blue; cursor: 
+                pointer;">Cerrar</button>
+            </p>
+        </div
 
         <nav>
             <ul>
@@ -39,75 +59,76 @@
     <div class="container">
         <h2>Cursos del Colegio Técnico</h2>
 
-      <div class="year">
-    <h3>1er Año</h3>
-    <ul class="divisions">
-        <li><a href="1ro 1ra.html">1ro 1ra</a></li>
-        <li><a href="1ro 2da.html">1ro 2da</a></li>
-        <li><a href="1ro 3ra.html">1ro 3ra</a></li>
-        <li><a href="1ro 4ta.html">1ro 4ta</a></li>
-    </ul>
-</div>
-
-<div class="year">
-    <h3>2do Año</h3>
-    <ul class="divisions">
-        <li><a href="2do 1ra.html">2do 1ra</a></li>
-        <li><a href="2do 2da.html">2do 2da</a></li>
-        <li><a href="2do 3ra.html">2do 3ra</a></li>
-        <li><a href="2do 4ta.html">2do 4ta</a></li>
-    </ul>
-</div>
-
-<div class="year">
-    <h3>3er Año</h3>
-    <ul class="divisions">
-        <li><a href="3ro 1ra.html">3ro 1ra</a></li>
-        <li><a href="3ro 2da.html">3ro 2da</a></li>
-        <li><a href="3ro 3ra.html">3ro 3ra</a></li>
-        <li><a href="3ro 4ta.html">3ro 4ta</a></li>
-    </ul>
-</div>
-
-<div class="year">
-    <h3>4to Año</h3>
-    <ul class="divisions">
-        <li><a href="4to 1ra.html">4to 1ra</a></li>
-        <li><a href="4to 2da.html">4to 2da</a></li>
-        <li><a href="4to 3ra.html">4to 3ra</a></li>
-        <li><a href="4to 4ta.html">4to 4ta</a></li>
-        <li><a href="4to 5ta.html">4to 5ta</a></li>
-    </ul>
-</div>
-
-<div class="year">
-    <h3>5to Año</h3>
-    <ul class="divisions">
-        <li><a href="5to 1ra.html">5to 1ra</a></li>
-        <li><a href="5to 2da.html">5to 2da</a></li>
-        <li><a href="5to 3ra.html">5to 3ra</a></li>
-    </ul>
-</div>
-
-<div class="year">
-    <h3>6to Año</h3>
-    <ul class="divisions">
-        <li><a href="6to 1ra.html">6to 1ra</a></li>
-        <li><a href="6to 2da.html">6to 2da</a></li>
-        <li><a href="6to 3ra.html">6to 3ra</a></li>
-    </ul>
-</div>
-
-<div class="year">
-    <h3>7mo Año</h3>
-    <ul class="divisions">
-        <li><a href="7mo 1ra.html">7mo 1ra</a></li>
-        <li><a href="7mo 2da.html">7mo 2da</a></li>
-        <li><a href="7mo 3ra.html">7mo 3ra</a></li>
-    </ul>
-</div>
+        <div class="year">
+            <h3>1er Año</h3>
+            <ul class="divisions">
+                <li><a href="1ro 1ra.html">1ro 1ra</a></li>
+                <li><a href="1ro 2da.html">1ro 2da</a></li>
+                <li><a href="1ro 3ra.html">1ro 3ra</a></li>
+                <li><a href="1ro 4ta.html">1ro 4ta</a></li>
+            </ul>
         </div>
-    </div>
+        
+        <div class="year">
+            <h3>2do Año</h3>
+            <ul class="divisions">
+                <li><a href="2do 1ra.html"  id="nose">2do 1ra</li></a>
+                <li><a href="2do 2da.html">2do 2da</a></li>
+                <li><a href="2do 3ra.html">2do 3ra</a></li>
+                <li><a href="2do 4ta.html">2do 4ta</a></li>
+            </ul>
+        </div>
+        
+        <div class="year">
+            <h3>3er Año</h3>
+            <ul class="divisions">
+                <li><a href="3ro 1ra.html">3ro 1ra</a></li>
+                <li><a href="3ro 2da.html">3ro 2da</a></li>
+                <li><a href="3ro 3ra.html">3ro 3ra</a></li>
+                <li><a href="3ro 4ta.html">3ro 4ta</a></li>
+            </ul>
+        </div>
+        
+        <div class="year">
+            <h3>4to Año</h3>
+            <ul class="divisions">
+                <li><a href="4to 1ra.html">4to 1ra</a></li>
+                <li><a href="4to 2da.html">4to 2da</a></li>
+                <li><a href="4to 3ra.html">4to 3ra</a></li>
+                <li><a href="4to 4ta.html">4to 4ta</a></li>
+                <li><a href="4to 5ta.html">4to 5ta</a></li>
+            </ul>
+        </div>
+        
+        <div class="year">
+            <h3>5to Año</h3>
+            <ul class="divisions">
+                <li><a href="5to 1ra.html">5to 1ra</a></li>
+                <li><a href="5to 2da.html">5to 2da</a></li>
+                <li><a href="5to 3ra.html">5to 3ra</a></li>
+            </ul>
+        </div>
+        
+        <div class="year">
+            <h3>6to Año</h3>
+            <ul class="divisions">
+                <li><a href="6to 1ra.html">6to 1ra</a></li>
+                <li><a href="6to 2da.html">6to 2da</a></li>
+                <li><a href="6to 3ra.html">6to 3ra</a></li>
+            </ul>
+        </div>
+        
+        <div class="year">
+            <h3>7mo Año</h3>
+            <ul class="divisions">
+                <li><a href="7mo 1ra.html">7mo 1ra</a></li>
+                <li><a href="7mo 2da.html">7mo 2da</a></li>
+                <li><a href="7mo 3ra.html">7mo 3ra</a></li>
+            </ul>
+        </div>
+        
+            
+        </div>
 
      <!-- Footer -->
      <footer>
