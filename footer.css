@@ -1,0 +1,18 @@
+/*ESTE CSS VA EN TODOS LOS .HTML*/
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+    margin-top: 40px;
+}
+
+
+/* ESTO ESTA EN TODOS LOS HTML
+     <!-- Footer -->
+     <footer>
+        <p>&copy; 2024 Cursos - Tesla</p>
+    </footer>
+*/
