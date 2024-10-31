@@ -64,16 +64,6 @@ const pagesData = {
     "7mo 2da.html": ["7mo 2da"],
     "7mo 3ra.html": ["7mo 3ra"],
 
-    "cursos.html":[
-        "Lunes",
-        "Martes",
-        "Miércoles",
-        "Jueves",
-        "Viernes",
-        "Taller",
-        "Aula"
-    ],
-
     "novedades.html": [
         "Últimas noticias",
         "Eventos recientes",
