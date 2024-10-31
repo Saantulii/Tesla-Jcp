@@ -16,9 +16,12 @@ body {
 }
 
 h2{
-    margin-bottom: 30px;
-    color: #333;
+    color: black;
+    text-align: center;
+    font-size: 25px;
+    padding: 20px;
 }
+
 
 .grid {
     display: grid;
