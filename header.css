@@ -57,23 +57,8 @@ header{
 
 li{
   color: white;
-  display: flex;
-  justify-content: space-between;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-size: 18px;
-  border: none;
-  padding: 10px;
 }
 
-li a{
-  text-decoration: none;
-  color: white;
-}
-li a:hover{
-  text-decoration: none;
-  color: white;
-  cursor: pointer;
-}
 
 btn{
   border: none;
@@ -90,9 +75,145 @@ btn:hover{
 /*----------------------------- FOOTER -------------------------------*/
 
 footer {
+  width: 100%;
   text-align: center;
   padding: 20px;
   background: #333;
   color: #fff;
   margin-top: 40px;
 }
+
+
+/*navegacion*/
+.nav-bar {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  font-size: 18px;
+}
+
+.nav-bar li {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  border: none;
+}
+
+.nav-bar li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+}
+
+/* Estilos para el submenú desplegable */
+.dropdown {
+  position: relative;
+}
+
+#Más {
+  color: white;
+  margin-top: 20px;
+}
+
+.dropdown-content {
+  display: none; /* Oculto por defecto */
+  position: absolute;
+  top: 100%; /* Aparece justo debajo del botón "Más" */
+  right: 0;
+  background-color: aqua;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border: 1px solid blue;
+  z-index: 9999; /* Asegura que esté por encima de otros elementos */
+}
+.dropdown-content li a:hover{
+  background-color: gray;
+  border: 2px soldi blue;
+}
+
+.dropdown-content li a {
+  padding: 10px;
+  color: white;
+}
+
+/* Mostrar el menú desplegable cuando se coloca el ratón sobre el botón "Más" */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+/*---------------------------- media query -------------------------------*/
+@media (max-width:800px){
+
+  body{
+      background-color: aqua;
+  }
+
+  .img-tesla{
+    border: none;
+    /*llevar esta imagen a la izq*/
+    display: block;
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+
+  .search-container {
+    border: none;
+    display: block;
+    margin: 0 auto; /* Centra horizontalmente */
+    text-align: center; /* Centra el contenido dentro del contenedor */
+    width: 30%;
+  }
+
+}
+
+@media (max-width: 600px) {
+  /* Ocultar algunos elementos en pantallas pequeñas */
+  .nav-bar li:nth-child(5),
+  .nav-bar li:nth-child(6),
+  .nav-bar li:nth-child(7) {
+      display: none;
+  }
+
+  /* Mostrar el botón "Más" */
+  .dropdown {
+      display: block;
+  }
+}
+
+
+@media (min-width:800px){
+
+  .img-tesla{
+    border: none;
+    /*llevar esta imagen a la izq*/
+    display: block;
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+
+  .search-container {
+    border: none;
+    display: block;
+    margin: 0 auto; /* Centra horizontalmente */
+    text-align: center; /* Centra el contenido dentro del contenedor */
+    width: 30%;
+  }
+
+}
+
+  /* Media query para pantallas grandes */
+@media (min-width: 1000px) {
+  /* Ocultar los elementos adicionales en pantallas pequeñas */
+  .nav-bar li:nth-ch {
+    display: none; /* Los oculta en pantallas pequeñas */
+  }
+
+  /* "none" lo oculta  y "block" muestra el btn mas */
+  .dropdown {
+    display: block;
+  }
+}
+
+
