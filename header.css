@@ -169,10 +169,8 @@ footer {
 }
 
 @media (max-width: 600px) {
-  /* Ocultar algunos elementos en pantallas pequeñas */
-  .nav-bar li:nth-child(5),
-  .nav-bar li:nth-child(6),
-  .nav-bar li:nth-child(7) {
+  /* Ocultar algunos elementos en pantallas pequeñas */,
+  .nav-bar li:nth-child() {
       display: none;
   }
 
