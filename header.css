@@ -66,7 +66,7 @@ btn{
   cursor: pointer;
 }
 btn:hover{
-  background-color: aqua;
+  background-color: grey;
   color: white;
   border-radius: 50px;
   padding: 6px;
@@ -113,27 +113,25 @@ footer {
   color: white;
   margin-top: 20px;
 }
-
 .dropdown-content {
   display: none; /* Oculto por defecto */
   position: absolute;
   top: 100%; /* Aparece justo debajo del botón "Más" */
   right: 0;
-  background-color: aqua;
+  background-color: gray;
   list-style: none;
   padding: 0;
   margin: 0;
-  border: 1px solid blue;
   z-index: 9999; /* Asegura que esté por encima de otros elementos */
 }
 .dropdown-content li a:hover{
-  background-color: gray;
-  border: 2px soldi blue;
+  background-color: grey;
+  border: 1px soldi blue;
 }
 
 .dropdown-content li a {
   padding: 10px;
-  color: white;
+  color: black;
 }
 
 /* Mostrar el menú desplegable cuando se coloca el ratón sobre el botón "Más" */
