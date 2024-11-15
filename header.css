@@ -169,7 +169,7 @@ footer {
 }
 
 @media (max-width: 600px) {
-  /* Ocultar algunos elementos en pantallas pequeñas */,
+  /* Ocultar algunos elementos en pantallas pequeñas */
   .nav-bar li:nth-child() {
       display: none;
   }
@@ -213,5 +213,4 @@ footer {
     display: block;
   }
 }
-
 
