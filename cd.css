@@ -12,18 +12,6 @@ body {
     color: #333;
 }
 
-.img-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.img-lista51{
-    border: 2px solid red;
-    width: 260px;
-    height: 260px;
-    max-width: 100%; /* Ajusta el tamaño de la imagen si es necesario */
-}
 
 .section {
     padding: 40px 20px;
@@ -88,4 +76,146 @@ footer {
     background: #333;
     color: #fff;
     margin-top: 40px;
+}
+
+.section {
+    text-align: center;
+    padding: 20px;
+}
+
+.fila {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.miembro {
+    margin: 0 15px;
+    text-align: center;
+}
+
+.miembro img {
+    width: 150px; /* Ajusta según sea necesario */
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.miembro p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+a button{
+    border:none;
+    background-color: wheat;
+    padding: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+
+
+@media (min-width:1000px){
+    .img-container {
+        display: flex;
+        justify-content: flex-start;  /* Alinea los elementos al inicio (izquierda) */
+        align-items: center;          /* Centra la imagen verticalmente en el contenedor */
+    }
+    
+    .img-lista51 {
+        padding: 15px;
+        border:none;
+        width: 160px;
+        height: auto;
+    }
+
+    .section-div{
+        border: none;
+        margin-top: -165px;
+    }
+    
+    .section {
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .fila {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    
+    .miembro {
+        margin: 0 15px;
+        text-align: center;
+    }
+    
+    .miembro img {
+        width: 150px; /* Ajusta según sea necesario */
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 10px;
+    }
+    
+    .miembro p {
+        font-size: 16px;
+        font-weight: bold;
+        color: #333;
+    }
+    
+    /* Estilo general para las imágenes */
+    .logros-container {
+    display: flex;
+    gap: 20px; /* Espacio entre las imágenes */
+    justify-content: center; /* Alineación centrada de las imágenes */
+    }
+
+    .logros-container img {
+    max-width: 100%;
+    height: auto;
+    width: 45%; /* Ajusta según lo que necesites para que no se estiren demasiado */
+    }
+}
+
+/* Media Query para pantallas más pequeñas */
+@media (max-width: 800px) {
+    .fila {
+        flex-direction: column;  /* Cambia la disposición de los elementos a columna */
+        align-items: center;     /* Centra los elementos de la fila */
+    }
+    
+    .miembro {
+        flex-basis: 80%; /* Cada miembro ocupará más espacio en pantallas pequeñas */
+        margin-bottom: 15px; /* Espacio entre los miembros */
+    }
+
+    .miembro img {
+        width: 120px; /* Se reduce el tamaño de la imagen en pantallas más pequeñas */
+        height: 120px;
+    }
+
+    .img-lista51 {
+        padding: 20px;
+        border: none;
+        width: 260px;
+        height: auto;
+    }
+
+        /* Estilo general para las imágenes */
+        .logros-container {
+            display: flex;
+            gap: 20px; /* Espacio entre las imágenes */
+            justify-content: center; /* Alineación centrada de las imágenes */
+            }
+        
+            .logros-container img {
+            height: auto;
+            width: 45%; /* Ajusta según lo que necesites para que no se estiren demasiado */
+            }
 }
