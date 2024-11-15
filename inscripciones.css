@@ -43,9 +43,10 @@ body {
 }
 
 #especialidad li {
+    padding: 10px;
+    border: 1px solid gray;
     margin-bottom: 10px;
     color: black;
-    border: 1px solid gray;
 }
 
 #especialidad .galeria {
@@ -57,7 +58,6 @@ body {
 
 #especialidad h4 {
     color: black;
-    margin-top: -10px;
     text-align: center;
 }
 
