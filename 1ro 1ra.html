@@ -9,6 +9,8 @@
     <script src="data.js" defer></script> <!-- Incluye el archivo de datos -->
     <link rel="icon" href="tesla escudo.jpg" type="image/x-icon">
     <title>1ro 1ra - Tesla</title>
+    <link rel="stylesheet" href="search.css">
+    <script src="NODE.js" defer></script>
 </head>
 <body>
     <header>
@@ -17,39 +19,42 @@
                 <img src="tesla escudo.jpg" alt="escudo de tecnica" class="img-tesla">
             </a>
             <h1 class="titulo">E.E.S.T N°2 <br> TESLA</h1>
+        
         </div>
 
         <div class="search-container">
             <input class="input" type="text" placeholder="Buscar...">
-            <!-- Icono SVG que funciona como botón -->
             <svg viewBox="0 0 24 24" class="search__icon" id="search-button" style="cursor: pointer;">
                 <g>
-<path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9  4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-    1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path>
+                    <path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path>
                 </g>
             </svg>
             <p class="search-message" style="display: none; color: red;">
-La búsqueda no ha sido encontrada, ¡intente de nuevo, por favor!
-<button class="close-message" style="background: none; border: none; color: blue; cursor: pointer;">Cerrar</button>
+                La búsqueda no ha sido encontrada, ¡intente de nuevo, por favor!
+                <button class="close-message" style="background: none; border: none; color: blue; cursor: pointer;">Cerrar</button>
             </p>
-            
-        </div>
+        </div
 
     <nav>
-        <ul>
-            <li>
-                <a href="index.html"><btn>INICIO</btn></a>
-                <a href="novedades.html"><btn>NOVEDADES</btn></a>
-                <a href="cursos.html"><btn>CURSOS</btn></a>
-                <a href="nosotros.html"><btn>NOSOTROS</btn></a>
-                <a href="calendario.html"><btn>CALENDARIO</btn></a>
-                <a href="inscripciones.html"><btn>INSCRIPCIONES</btn></a>
-                <a href="cd.html"><btn>CENTRO DE ESTUDIANTES</btn></a>
+        <ul class="nav-bar">
+            <li><a href="index.html"><btn>INICIO</btn></a></li>
+        
+    <!-- Botón "Más" que muestra el menú desplegable en pantallas pequeñas -->
+            <li class="dropdown">
+                <btn id="Más">Más</btn>
+                <ul class="dropdown-content">
+        <li><a href="cd.html"><btn>CENTRO ESTUDIANTES</btn></a></li>
+        <li><a href="cursos.html"><btn>CURSOS</btn></a></li>
+        <li><a href="novedades.html"><btn>NOVEDADES</btn></a></li>
+        <li><a href="nosotros.html"><btn>NOSOTROS</btn></a></li>
+        <li><a href="calendario.html"><btn>CALENDARIO</btn></a></li>
+        <li><a href="inscripciones.html"><btn>ESPECIALIDAD</btn></a></li>
+                </ul>
             </li>
-            
         </ul>
+        
     </nav>
 </header>
-
 <div class="schedule">
     <h2>Horario de 1ro 1ra</h2>
 
