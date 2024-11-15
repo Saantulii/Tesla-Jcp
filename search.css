@@ -2,16 +2,13 @@
 /* From Uiverse.io by Smit-Prajapati */ 
 .search-container {
   margin-top: -60px;
-  border: 2px solid red;
   position: relative;
-  width: 20%;
   height: 50px;
   border-radius: 50px;
   background: linear-gradient(135deg, rgb(218, 232, 247) 0%, rgb(214, 229, 247) 100%);
   padding: 0px;
   display: flex;
   justify-content: center;
-  margin-left: 500px;
 }
 
 .search-container::after, .search-container::before {
@@ -42,7 +39,7 @@
   width: 100%;
   background: linear-gradient(135deg, rgb(218, 232, 247) 0%, rgb(214, 229, 247) 100%);
   border: none;
-  color: #9EBCD9;
+  color: #000000;
   font-size: 20px;
   border-radius: 50px;
 }
