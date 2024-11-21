@@ -57,17 +57,18 @@ form input, form textarea {
 }
 
 form button {
-    padding: 10px 20px;
+    padding: 10px;
+    width: auto;
     background-color: #333;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 1.1em;
 }
 
 form button:hover {
     background-color: #555;
+
 }
 
 footer {
@@ -118,6 +119,19 @@ a button{
     font-size: 20px;
 }
 
+.inicio-cd{
+    padding: 40px 20px;
+    background-color: #fff;
+    margin: 20px auto;
+    max-width: 1000px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cd2{
+    color: black;
+    height: auto;
+    width: auto;
+}
 
 
 @media (min-width:1000px){
