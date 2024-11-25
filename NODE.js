@@ -95,7 +95,7 @@ function openImage() {
     modalImg.classList.add('expand');
 }
 
-// Función para cerrar el modal
+// Función para cerrar el modal DE LA IMAGEN
 function closeImage() {
     const modal = document.getElementById('modal');
     const modalImg = document.querySelector('.modal-img');
@@ -104,3 +104,76 @@ function closeImage() {
     modalImg.classList.remove('expand');
 }
 
+// Función para abrir un modal
+function openModal(modalId) {
+    // Seleccionar el modal por su ID
+    const modal = document.getElementById(`${modalId}-modal`);
+    if (modal) {
+        modal.style.display = "block"; // Mostrar el modal
+    }
+}
+
+// Función para cerrar un modal
+function closeModal(modalId) {
+    // Seleccionar el modal por su ID
+    const modal = document.getElementById(`${modalId}-modal`);
+    if (modal) {
+        modal.style.display = "none"; // Ocultar el modal
+    }
+}
+
+// Detectar clic fuera del contenido del modal para cerrarlo
+window.onclick = function(event) {
+    // Obtener todos los modales
+    const modals = document.querySelectorAll(".modal");
+    modals.forEach((modal) => {
+        if (event.target === modal) {
+            modal.style.display = "none"; // Ocultar modal si se hace clic fuera del contenido
+        }
+    });
+};
+
+// Función para abrir el modal
+function openModal(modalId) {
+    // Mostrar el modal
+    var modal = document.getElementById(modalId + '-modal');
+    modal.style.display = 'block';  // Mostrar el modal
+  }
+  
+  // Función para cerrar el modal
+  function closeModal(modalId) {
+    // Obtener el modal
+    var modal = document.getElementById(modalId + '-modal');
+    
+    // Agregar clase 'closing' para la animación de cierre
+    modal.classList.add('closing');
+    
+    // Después de la animación, ocultar el modal
+    setTimeout(function() {
+      modal.style.display = 'none';  // Ocultar el modal
+      modal.classList.remove('closing');  // Eliminar la clase 'closing' para la próxima vez
+    }, 500);  // 500ms es la duración de la animación
+  }
+  
+  // Cerrar el modal si se hace clic fuera de él
+  window.addEventListener('click', function(event) {
+    var modals = document.querySelectorAll('.modal-nav');  // Obtener todos los modales con la clase 'modal-nav'
+    modals.forEach(function(modal) {
+      if (event.target === modal) {
+        var modalId = modal.id.replace('-modal', '');  // Obtener el ID del modal
+        closeModal(modalId);  // Llamar a la función de cerrar modal
+      }
+    });
+  });
+  
+  // Cerrar el modal si se presiona la tecla "Esc"
+  window.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape') {
+      var openModals = document.querySelectorAll('.modal-nav[style="display: block;"]');  // Buscar modales visibles
+      openModals.forEach(function(modal) {
+        var modalId = modal.id.replace('-modal', '');  // Obtener el ID del modal
+        closeModal(modalId);  // Cerrar todos los modales visibles
+      });
+    }
+  });
+  
