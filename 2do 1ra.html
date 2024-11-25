@@ -14,7 +14,7 @@
 </head>
 <body>
 
-      <header>
+         <header>
         <div class="header2">
             <img src="tesla escudo.jpg" alt="escudo de tecnica" class="img-tesla" onclick="openImage()">
             <h1 class="titulo">E.E.S.T N°2 <br> TESLA</h1>
@@ -39,31 +39,76 @@
             <button class="close-search" style="display: none;">✖</button>
             <p class="search-message" style="display: none; color: red;">
                 La búsqueda no ha sido encontrada, ¡intente de nuevo, por favor!
-                <button class="close-message" style="background: none; border: none; color: blue; cursor: pointer;">Cerrar</button>
+                <button class="close-message" style="background: none; border: none; color:
+                                                    blue; cursor: pointer;">Cerrar</button>
             </p>
         </div>
         
 
     <nav>
-        <ul class="nav-bar">
-            <li><a href="index.html"><btn id="inico">INICIO</btn></a></li>
-        
-    <!-- Botón "Más" que muestra el menú desplegable en pantallas pequeñas -->
-            <li class="dropdown">
-                <button id="Más"><img src="chevron-down-outline.svg" alt=""></button>
-                <ul class="dropdown-content">
-        <li><a href="cd.html"><btn>CENTRO ESTUDIANTES</btn></a></li>
-        <li><a href="cursos.html"><btn>CURSOS</btn></a></li>
-        <li><a href="novedades.html"><btn>NOVEDADES</btn></a></li>
-        <li><a href="nosotros.html"><btn>NOSOTROS</btn></a></li>
-        <li><a href="calendario.html"><btn>CALENDARIO</btn></a></li>
-        <li><a href="inscripciones.html"><btn>ESPECIALIDAD</btn></a></li>
-                </ul>
-            </li>
+        <ul>
+            <li><a href="index.html"><button>INICIO</button></a></li>
+            <li onclick="openModal('alumnos')"><button>ALUMNOS</button></li>
+            <li onclick="openModal('materias')"><button>MATERIAS</button></li>
+            <li onclick="openModal('servicios')"><button>SERVICIOS</button></li>
+            <li onclick="openModal('nosotros')"><button>NOSOTROS</button></li>
         </ul>
-        
+    
+        <!-- Modales -->
+        <!-- Modal para Alumnos -->
+        <div id="alumnos-modal" class="modal-nav">
+            <div class="modal-content-nav">
+                <span class="close-nav" onclick="closeModal('alumnos')">&times;</span>
+                <h2>Alumnos</h2>
+                <ul>
+                    <li><a href="cd.html">Centro Estudiantes</a></li>
+                    <li><a href="cursos.html">Cursos</a></li>
+                    <li><a href="novedades.html">Novedades</a></li>
+                    <li><a href="previas.html">Previas</a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <!-- Modal para Materias -->
+        <div id="materias-modal" class="modal-nav">
+            <div class="modal-content-nav">
+                <span class="close-nav" onclick="closeModal('materias')">&times;</span>
+                <h2>Materias</h2>
+                <ul>
+                    <li><a href="inscripciones.html">Especialidad</a></li>
+                    <li><a href="intensificacion.html">Intensificación</a></li>
+                    <li><a href="calendario.html">Calendario</a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <!-- Modal para Servicios -->
+        <div id="servicios-modal" class="modal-nav">
+            <div class="modal-content-nav">
+                <span class="close-nav" onclick="closeModal('servicios')">&times;</span>
+                <h2>Servicios</h2>
+                <ul>
+                    <li><a href="secretaria.html">Secretaria</a></li>
+                    <li><a href="recepcion.html">Recepción</a></li>
+                    <li><a href="comunicados.html">Comunicados</a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <!-- Modal para Nosotros -->
+        <div id="nosotros-modal" class="modal-nav">
+            <div class="modal-content-nav">
+                <span class="close-nav" onclick="closeModal('nosotros')">&times;</span>
+                <h2>Nosotros</h2>
+                <ul>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="nikolatesla.html">Nikola Tesla</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
 </header>
+
 
 <div class="schedule">
     <h2>Horario de 2do 1ra</h2>
