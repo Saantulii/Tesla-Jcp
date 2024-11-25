@@ -76,19 +76,19 @@
 
 /*---------------------------------------------------AGREGADO POR SANTULI -----------------------------------------*/
 
-.search-message{
-  margin-top: 100px;
-  color: red;
-  width: 100%;
-  height: auto;
-  border: 2px solid black;
-}
-
 @media (min-width:800px){
   .search-container:hover{
-    width: 70%;
+    width: 55%;
     transition: 3s;
 }
 }
+
+@media (max-width:800px){
+  .search-container:hover{
+    width: 100%;
+    transition: 3s;
+}
+}
+
 
 /*-------------------------------------------------------------------------------------------------------------*/
