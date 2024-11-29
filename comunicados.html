@@ -14,7 +14,7 @@
     <title>Tesla - Comunicados</title>
 </head>
 <body>
-      <header>
+    <header>
         <div class="header2">
             <img src="tesla escudo.jpg" alt="escudo de tecnica" class="img-tesla" onclick="openImage()">
             <h1 class="titulo">E.E.S.T N°2 <br> TESLA</h1>
@@ -39,126 +39,76 @@
             <button class="close-search" style="display: none;">✖</button>
             <p class="search-message" style="display: none; color: red;">
                 La búsqueda no ha sido encontrada, ¡intente de nuevo, por favor!
-                <button class="close-message" style="background: none; border: none; color:
-                                                    blue; cursor: pointer;">Cerrar</button>
+                <button class="close-message" style="background: none; border: none; color: blue; cursor: pointer;">Cerrar</button>
             </p>
         </div>
         
 
-    <nav>
-        <ul>
-            <li><a href="index.html"><button>INICIO</button></a></li>
-            <li onclick="openModal('alumnos')"><button>ALUMNOS</button></li>
-            <li onclick="openModal('materias')"><button>MATERIAS</button></li>
-            <li onclick="openModal('servicios')"><button>SERVICIOS</button></li>
-            <li onclick="openModal('nosotros')"><button>NOSOTROS</button></li>
-        </ul>
-    
-        <!-- Modales -->
-        <!-- Modal para Alumnos -->
-        <div id="alumnos-modal" class="modal-nav">
-            <div class="modal-content-nav">
-                <span class="close-nav" onclick="closeModal('alumnos')">&times;</span>
-                <h2>Alumnos</h2>
-                <ul>
-                    <li><a href="cd.html">Centro Estudiantes</a></li>
-                    <li><a href="cursos.html">Cursos</a></li>
-                    <li><a href="novedades.html">Novedades</a></li>
-                    <li><a href="previas.html">Previas</a></li>
-                </ul>
+        <nav>
+            <ul>
+                <li><a href="index.html"><button>INICIO</button></a></li>
+                <li onclick="openModal('alumnos')"><button>ALUMNOS</button></li>
+                <li onclick="openModal('materias')"><button>MATERIAS</button></li>
+                <li onclick="openModal('servicios')"><button>SERVICIOS</button></li>
+                <li onclick="openModal('nosotros')"><button>NOSOTROS</button></li>
+            </ul>
+        
+            <!-- Modales -->
+            <!-- Modal para Alumnos -->
+            <div id="alumnos-modal" class="modal-nav">
+                <div class="modal-content-nav">
+                    <span class="close-nav" onclick="closeModal('alumnos')">&times;</span>
+                    <h2>Alumnos</h2>
+                    <ul>
+                        <li><a href="cd.html">Centro Estudiantes</a></li>
+                        <li><a href="cursos.html">Cursos</a></li>
+                        <li><a href="novedades.html">Novedades</a></li>
+                        <li><a href="previas.html">Previas</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    
-        <!-- Modal para Materias -->
-        <div id="materias-modal" class="modal-nav">
-            <div class="modal-content-nav">
-                <span class="close-nav" onclick="closeModal('materias')">&times;</span>
-                <h2>Materias</h2>
-                <ul>
-                    <li><a href="inscripciones.html">Especialidad</a></li>
-                    <li><a href="intensificacion.html">Intensificación</a></li>
-                    <li><a href="calendario.html">Calendario</a></li>
-                </ul>
+        
+            <!-- Modal para Materias -->
+            <div id="materias-modal" class="modal-nav">
+                <div class="modal-content-nav">
+                    <span class="close-nav" onclick="closeModal('materias')">&times;</span>
+                    <h2>Materias</h2>
+                    <ul>
+                        <li><a href="inscripciones.html">Especialidad</a></li>
+                        <li><a href="intensificacion.html">Intensificación</a></li>
+                        <li><a href="calendario.html">Calendario</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    
-        <!-- Modal para Servicios -->
-        <div id="servicios-modal" class="modal-nav">
-            <div class="modal-content-nav">
-                <span class="close-nav" onclick="closeModal('servicios')">&times;</span>
-                <h2>Servicios</h2>
-                <ul>
-                    <li><a href="secretaria.html">Secretaria</a></li>
-                    <li><a href="recepcion.html">Recepción</a></li>
-                    <li><a href="comunicados.html">Comunicados</a></li>
-                </ul>
+        
+            <!-- Modal para Servicios -->
+            <div id="servicios-modal" class="modal-nav">
+                <div class="modal-content-nav">
+                    <span class="close-nav" onclick="closeModal('servicios')">&times;</span>
+                    <h2>Servicios</h2>
+                    <ul>
+                        <li><a href="secretaria.html">Secretaria</a></li>
+                        <li><a href="recepcion.html">Recepción</a></li>
+                        <li><a href="comunicados.html">Comunicados</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    
-        <!-- Modal para Nosotros -->
-        <div id="nosotros-modal" class="modal-nav">
-            <div class="modal-content-nav">
-                <span class="close-nav" onclick="closeModal('nosotros')">&times;</span>
-                <h2>Nosotros</h2>
-                <ul>
-                    <li><a href="nosotros.html">Nosotros</a></li>
-                    <li><a href="nikolatesla.html">Nikola Tesla</a></li>
-                </ul>
+        
+            <!-- Modal para Nosotros -->
+            <div id="nosotros-modal" class="modal-nav">
+                <div class="modal-content-nav">
+                    <span class="close-nav" onclick="closeModal('nosotros')">&times;</span>
+                    <h2>Nosotros</h2>
+                    <ul>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="nikolatesla.html">Nikola Tesla</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
 </header>
 
-
 <div class="container-mayor">
-    
-    <div class="container-menor">
-        <div class="partes">
-            <h2>
-                Invitación a la Fiesta de Colación 2024
-            </h2>
-            <p>
-            La comunidad educativa del colegio tiene el honor de invitar a 
-            todos sus integrantes a la Fiesta de Colación, un evento muy especial 
-            en el que celebraremos el esfuerzo, dedicación y logros de los 
-            estudiantes de 7mo 1ra, 7mo 2da y 7mo 3ra, quienes culminan una etapa 
-            fundamental de su formación académica. <br>
-            <br>
-            Fecha: <strong>Miércoles 13 de diciembre de 2024 </strong><br>
-            Horarios: A confirmar <br>
-            <br>
-            Será una jornada llena de emociones, recuerdos y momentos 
-            inolvidables, en la que rendiremos homenaje a los egresados y 
-            compartiremos junto a sus familias y seres queridos este importante 
-            logro.
-            <br>
-            <br>
-            ¡Los esperamos para ser parte de esta gran celebración que marca el 
-            cierre de un ciclo y el inicio de un futuro lleno de oportunidades! 
-                🎓✨
-            </p>
-        </div>
-    </div>
-    
-    <div class="container-menor">
-        <div class="partes">
-            <h2>
-                Invitación al Acto de Cierre de Ciclo Lectivo 2024
-            </h2>
-            <p>
-                La comunidad educativa tiene el agrado de invitar a todos a participar del Acto de Cierre de Ciclo Lectivo 2024, 
-                un espacio para reflexionar y celebrar los logros alcanzados a lo largo de este año escolar. <br>
-                <br>
-                Fecha: <strong>Lunes 18 de diciembre de 2024</strong> <br>
-                Hora: <strong>18:00 hs </strong><br>
-                <br>
-                Durante este acto, despediremos un ciclo lleno de aprendizajes, experiencias y momentos significativos, con un especial
-                reconocimiento a los docentes, estudiantes y familias que fueron parte de este recorrido.
-                <br>
-                ¡Acompáñanos en este importante evento para cerrar juntos el año académico con alegría y gratitud! 🎉
-            </p>
-        </div>
-    </div>
 
     <div class="container-menor">
         <div class="partes">
@@ -185,28 +135,75 @@
         </div>
     </div>
 
+    <div class="container-menor">
+        <div class="partes">
+            <h2>Aviso Importante: Período de Previas</h2>
+            <p>Estimados profesores,</p>
+            <p>
+                Les informamos que el <strong>período de previas</strong> será del  <strong>2 al 6 de diciembre de 2024</strong>.
+            </p>
+            <p>
+                Durante estos días, es imprescindible presentar las planillas completas y correctamente revisadas para garantizar 
+                el cierre administrativo del ciclo lectivo.
+            </p>
+            <p>
+                Agradecemos su compromiso y colaboración para cumplir con los plazos establecidos. 
+                Ante cualquier consulta, no duden en comunicarse con la secretaría escolar.
+            </p>
+            <p>¡Muchas gracias por su dedicación! ✏️📋</p>
+        </div>
+    </div>
+    
+
+    <div class="container-menor">
+        <div class="partes">
+            <h2>
+                Invitación a la Fiesta de Colación 2024
+            </h2>
+            <p>
+            La comunidad educativa del colegio tiene el honor de invitar a 
+            todos sus integrantes a la Fiesta de Colación, un evento muy especial 
+            en el que celebraremos el esfuerzo, dedicación y logros de los 
+            estudiantes de 7mo 1ra, 7mo 2da y 7mo 3ra, quienes culminan una etapa 
+            fundamental de su formación académica. <br>
+            <br>
+            Fecha: <strong>Viernes 13 de diciembre de 2024 </strong><br>
+            Horarios: A confirmar <br>
+            <br>
+            Será una jornada llena de emociones, recuerdos y momentos 
+            inolvidables, en la que rendiremos homenaje a los egresados y 
+            compartiremos junto a sus familias y seres queridos este importante 
+            logro.
+            <br>
+            <br>
+            ¡Los esperamos para ser parte de esta gran celebración que marca el 
+            cierre de un ciclo y el inicio de un futuro lleno de oportunidades! 
+                🎓✨
+            </p>
+        </div>
+    </div>
     
     <div class="container-menor">
         <div class="partes">
             <h2>
-                Aviso Importante: Período de Intensificación
+                Invitación al Acto de Cierre de Ciclo Lectivo 2024
             </h2>
             <p>
-                Estimados profesores, <br>
-            Les informamos que el período para la entrega de planillas de calificaciones <strong> será del 2 al 6 de 
-            diciembre </strong>
-            de 2024. <br>
+                La comunidad educativa tiene el agrado de invitar a todos a participar del Acto de Cierre de Ciclo Lectivo 2024, 
+                un espacio para reflexionar y celebrar los logros alcanzados a lo largo de este año escolar. <br>
                 <br>
-            Es imprescindible que durante estos días se presenten las planillas completas y correctamente revisadas 
-            para garantizar el cierre administrativo del ciclo lectivo. <br>
+                Fecha: <strong>Miercoles 18 de diciembre de 2024</strong> <br>
+                Hora: <strong>18:00 hs </strong><br>
                 <br>
-            Agradecemos su compromiso y colaboración para cumplir con los plazos establecidos. Ante cualquier consulta, 
-            no duden en comunicarse con la secretaría escolar. <br>
+                Durante este acto, despediremos un ciclo lleno de aprendizajes, experiencias y momentos significativos, con un especial
+                reconocimiento a los docentes, estudiantes y familias que fueron parte de este recorrido.
                 <br>
-            ¡Muchas gracias por su dedicación! ✏️📋
+                ¡Acompáñanos en este importante evento para cerrar juntos el año académico con alegría y gratitud! 🎉
             </p>
         </div>
     </div>
+
+
 
     <div class="container-menor">
         <div class="partes">
@@ -233,11 +230,14 @@
     </div>
 
 </div>
-      <!-- Footer -->
-      <footer>
-        <p>&copy; 2024 Comunicados - Tesla</p>
-    </footer>
 
+<footer>
+    <p>&copy; 2024 Secretaria - Tesla</p>
+    <p>Síguenos en:
+        <a href="https://www.facebook.com/eest2jcp/?locale=es_LA">Facebook</a> |
+         <a href="https://www.instagram.com/nnikola_tessla/?hl=es">Instagram</a> 
+    </p>
+</footer>
 
 </body>
 </html>
