@@ -241,6 +241,15 @@ footer {
   margin-top: 40px;
 }
 
+footer a{
+  text-decoration: none;
+  color: white;
+}
+
+footer a:hover{
+  color: wheat;
+}
+
 /*---------------------------- MEDIA QUERIES ----------------------------*/
 @media (max-width: 800px) {
   /* Modificar el diseño del nav para que sea horizontal y permita que los elementos se envuelvan */
