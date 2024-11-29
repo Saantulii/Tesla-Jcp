@@ -6,7 +6,8 @@ const pagesData = {
         "inicio",
         "Ubicación: José C. Paz, Buenos Aires",
     ],
-    "1ro 1ra.html": ["1ro 1ra"],
+
+    "1ro 1ra.html": ["1ro 1ra", "Horario de 1ro 1ra"],
     "1ro 2da.html": ["1ro 2da"],
     "1ro 3ra.html": ["1ro 3ra"],
     "1ro 4ta.html": ["1ro 4ta"],
@@ -32,6 +33,7 @@ const pagesData = {
     "7mo 1ra.html": ["7mo 1ra"],
     "7mo 2da.html": ["7mo 2da"],
     "7mo 3ra.html": ["7mo 3ra"],
+
 
     "novedades.html": [
         "Últimas noticias",
@@ -78,11 +80,41 @@ const pagesData = {
     "cd.html": [
         "Centro de estudiantes",
         "Nuestras Propuestas",
-        "Próximos Eventos"
+        "Próximos Eventos",
+        "presidentes",
     ],
+    
     "login.html": [
         "Iniciar sesión",
         "Registrarse",
         "login",
+    ],
+
+    "previas.html":[
+        "Previas",
+    ],
+
+    "equipo.html":[
+        "directivo",
+        "directivos",
+    ],
+
+    "nikolatesla.html":[
+        "nikola tesla",
+        "nicola tesla",
+        "mi cola apesta"
     ]
+
 };
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const moreButton = document.getElementById("moreButton");
+    const dropdownContent = document.querySelector(".dropdown-content");
+
+    // Agrega un evento de clic al botón "Más"
+    moreButton.addEventListener("click", function() {
+        // Alterna la clase 'show' para mostrar/ocultar el submenú
+        dropdownContent.classList.toggle("show");
+    });
+});
