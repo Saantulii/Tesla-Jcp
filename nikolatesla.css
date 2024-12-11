@@ -1,0 +1,84 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* General */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f9;
+  }
+  
+  /* Main content */
+  main {
+    padding: 1.5rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .hero {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .hero img {
+    width: 200px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+  }
+  
+  .hero h2 {
+    color: #002147;
+  }
+  
+  .achievements h3 {
+    border-left: 5px solid #002147;
+    padding-left: 10px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .achievements ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .achievements ul li {
+    background: rgb(51, 51, 214);
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  /* Quote */
+  .quote {
+    text-align: center;
+    font-style: italic;
+    margin: 2rem 0;
+    color: #555;
+  }
+  
+  .quote blockquote {
+    background: #f4f4f9;
+    border-left: 5px solid #002147;
+    margin: 0;
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #002147;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+  }
+  

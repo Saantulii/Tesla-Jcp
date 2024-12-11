@@ -1,0 +1,76 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+}
+
+.article-container {
+    position: relative; /* Permite posicionar elementos dentro del artículo */
+    width: 100%; /* Ancho del contenedor */
+    overflow: hidden; /* Oculta cualquier contenido que se salga del contenedor */
+}
+
+.article-container img {
+    width: 100%; /* Asegura que la imagen ocupe todo el contenedor */
+    height: auto; /* Mantiene la relación de aspecto de la imagen */
+}
+
+.p-bienvenido {
+    position: absolute; /* Posiciona el texto de manera absoluta */
+
+    color: white; /* Color del texto */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para el texto */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 30px;
+}
+
+.img-estudiantes{
+    width: 100%;
+    height: auto;
+}
+
+/*---------------------------- Media Query -------------------------------*/
+@media (min-width:701px){
+    .p-bienvenido{
+        top: 20px; /* Ajusta la distancia desde la parte superior */
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    .article-container {
+        position: relative;
+        width: 100%;
+        /* overflow: hidden; */ /* Removido para evitar que el contenido se recorte */
+        padding-bottom: 20px; /* Espacio para el texto debajo de la imagen */
+        text-align: center; /* Centrar el contenido */
+    }
+    
+    .article-container img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .p-bienvenido {
+        position: relative; /* Cambiado de absolute para que esté debajo de la imagen */
+        color: white;
+        background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para el texto */
+        border-radius: 5px;
+        font-size: 18px; /* Tamaño ajustado para mejor visibilidad */
+        line-height: 1.5;
+    }
+    
+    .img-estudiantes {
+        width: 100%;
+        height: auto;
+    }
+    
+
+}
+   
