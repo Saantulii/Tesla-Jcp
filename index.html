@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="tesla escudo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="search.css">
+    <link rel="stylesheet" href="footer.css">
+    <!--LO SIG ES DE LAS NOVEDADES-->
+    <link rel="stylesheet" href="colacion.css">
+    <link rel="stylesheet" href="inscripciones.css">
+    <link rel="stylesheet" href="cierre-de-ciclo.css">
+    <script src="data.js" defer></script> <!-- Incluye el archivo de datos -->
+    <script src="NODE.js" defer></script> <!-- Archivo principal -->
+    <title>Tesla José C. Paz</title>
+</head>
+<body>
+
+    <header>
+        <div class="header2">
+            <img src="tesla escudo.jpg" alt="escudo de tecnica" class="img-tesla" onclick="openImage()">
+            <h1 class="titulo">E.E.S.T N°2 <br> TESLA</h1>
+        </div>
+        
+        <!-- Modal para la imagen -->
+        <div class="modal" id="modal" onclick="closeImage()">
+            <div class="modal-content" onclick="event.stopPropagation()"> <!-- Esto evita que el clic en la imagen cierre el modal -->
+                <img src="tesla escudo.jpg" alt="escudo de tecnica" class="modal-img">
+                <button class="close-btn" onclick="closeImage()">✖</button>
+            </div>
+        </div>
+        
+
+        <div class="search-container">
+            <input class="input" type="text" placeholder="Buscar...">
+            <svg viewBox="0 0 24 24" class="search__icon" id="search-button" style="cursor: pointer;">
+                <g>
+                    <path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path>
+                </g>
+            </svg>
+            <button class="close-search" style="display: none;">✖</button>
+            <p class="search-message" style="display: none; color: red;">
+                La búsqueda no ha sido encontrada, ¡intente de nuevo, por favor!
+                <button class="close-message" style="background: none; border: none; color:
+                                                    blue; cursor: pointer;">Cerrar</button>
+            </p>
+        </div>
+        
+
+    <nav>
+        <ul>
+            <li><a href="index.html"><button>INICIO</button></a></li>
+            <li onclick="openModal('alumnos')"><button>ALUMNOS</button></li>
+            <li onclick="openModal('materias')"><button>MATERIAS</button></li>
+            <li onclick="openModal('servicios')"><button>SERVICIOS</button></li>
+            <li onclick="openModal('nosotros')"><button>NOSOTROS</button></li>
+        </ul>
+    
+        <!-- Modales -->
+        <!-- Modal para Alumnos -->
+        <div id="alumnos-modal" class="modal-nav">
+            <div class="modal-content-nav">
+                <span class="close-nav" onclick="closeModal('alumnos')">&times;</span>
+                <h2>Alumnos</h2>
+                <ul>
+                    <li><a href="cd.html">Centro Estudiantes</a></li>
+                    <li><a href="cursos.html">Cursos</a></li>
+                    <li><a href="novedades.html">Novedades</a></li>
+                    <li><a href="previas.html">Previas</a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <!-- Modal para Materias -->
+        <div id="materias-modal" class="modal-nav">
+            <div class="modal-content-nav">
+                <span class="close-nav" onclick="closeModal('materias')">&times;</span>
+                <h2>Materias</h2>
+                <ul>
+                    <li><a href="especialidad.html">Especialidad</a></li>
+                    <li><a href="intensificacion.html">Intensificación</a></li>
+                    <li><a href="calendario.html">Calendario</a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <!-- Modal para Servicios -->
+        <div id="servicios-modal" class="modal-nav">
+            <div class="modal-content-nav">
+                <span class="close-nav" onclick="closeModal('servicios')">&times;</span>
+                <h2>Servicios</h2>
+                <ul>
+                    <li><a href="secretaria.html">Secretaria</a></li>
+                    <li><a href="recepcion.html">Recepción</a></li>
+                    <li><a href="comunicados.html">Comunicados</a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <!-- Modal para Nosotros -->
+        <div id="nosotros-modal" class="modal-nav">
+            <div class="modal-content-nav">
+                <span class="close-nav" onclick="closeModal('nosotros')">&times;</span>
+                <h2>Nosotros</h2>
+                <ul>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="nikolatesla.html">Nikola Tesla</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<article>
+        <div class="article-container">
+            <img src="estudiantes.jpg" alt="" class="img-estudiantes">
+            <p class="p-bienvenido"> 
+                ¡Bienvenidos a Tesla José C. Paz! Nos complace recibirte en nuestra comunidad educativa, 
+                un lugar donde la enseñanza, el aprendizaje y el crecimiento personal son nuestra prioridad. 
+                En nuestra institución, creemos en la formación integral de nuestros estudiantes, fomentando 
+                la curiosidad intelectual y el pensamiento crítico.
+            </p>
+    
+        </div>
+
+        <div class="container">
+
+
+            <div class="card">
+                <div class="header">
+                    <img src="tesla escudo.jpg" alt="Escudo E.E.S.T N°2" class="logo">
+                    <h1>Acto de Colación</h1>
+                </div>
+                <blockquote>
+                    "Hay momentos en la vida que son especiales por sí solos. Compartirlos con las personas que quieres los convierte en momentos inolvidables."
+                </blockquote>
+                <p class="invitation-text">
+                    Nos complace invitarlos en nombre de la <strong>E.E.S.T N°2 de José C. Paz</strong> al Acto de Colación Promoción 2024. Contamos con su presencia para tan esperado evento.
+                </p>
+                <h2>EGRESADOS</h2>
+                <div class="year">
+                    <span>2024</span>
+                </div>
+                <div class="date">
+                    <div class="day">
+                        <span>VIERNES</span>
+                        <span class="number">13</span>
+                        <span>DICIEMBRE</span>
+                    </div>
+                    <ul class="schedule">
+                        <li>7mo Año 2da Div. - 18:00 Hs</li>
+                        <li>7mo Año 1ra Div. - 19:30 Hs</li>
+                        <li>7mo Año 3ra Div. - 21:00 Hs</li>
+                    </ul>
+                </div>
+                <footer>
+                    <p>E.E.S.T N°2 de José C. Paz</p>
+                    <p>Coronel Suárez 2453/57 - José C. Paz</p>
+                </footer>
+            </div>
+        
+            </div>
+
+
+            <div class="container">
+                <div class="invitacion">
+                    <p class="fecha-hora">18 DE DICIEMBRE DE 2024<br> <strong class="horario">18:00 HS.</strong></p>
+                    <h1>E.E.S.T. Nº 2 de José C. Paz</h1>
+                    <div class="escudo">
+                        <img src="tesla escudo.jpg" alt="Escudo" />
+                    </div>
+                    <div class="texto">
+                        <h2>NO OLVIDES</h2>
+                        <p>El final de este ciclo escolar te abre la puerta para nuevos aprendizajes. Éxito en el futuro que viene.</p>
+                    </div>
+                    <div class="detalle">
+                        <p>Se invita a toda la Comunidad Educativa de la E.E.S.T. Nº 2 de José C. Paz a participar del Acto de Cierre del Ciclo Lectivo 2024 a desarrollarse en nuestra institución.</p>
+                        <p><strong>La entrega de Boletines de Calificaciones se realizará una vez finalizado el acto.</strong></p>
+                    </div>
+                    <p class="direccion">Coronel Suárez 2453/57<br>José C. Paz</p>
+                </div>
+            
+                </div>
+            
+ <div class="container-inscripciones">
+        <div class="header-inscripciones">
+            <img src="tesla escudo.jpg" alt="Escudo E.E.S.T N°2" class="logo">
+            <h1>Inscripción 1er Año 2025</h1>
+            <h2>Alumnos Nuevos</h2>
+            <p>Se realizará por sorteo (Res.1650/24)</p>
+        </div>
+        <div class="content">
+            <p><strong>19 y 20 de Diciembre</strong> se entregarán números de <strong>8:30 a 10:30</strong> y de <strong>14 a 16 hs</strong>. Presentar constancia de alumno regular.</p>
+            <p><strong>SORTEO: 27/12 POR LOTERÍA NOCTURNA DE LA PCIA. DE BUENOS AIRES</strong></p>
+            <p>Los favorecidos se informarán a través del Facebook de la escuela: 
+                <a href="https://www.facebook.com/eest2jcp" target="_blank">https://www.facebook.com/eest2jcp</a>
+            </p>
+            <p>El día <strong>12 de Febrero de 2025 de 8 a 11 hs</strong> deberán presentar <strong>(SIN EXCEPCIÓN)</strong> la siguiente documentación:</p>
+            <ul>
+                <li>Constancia de Finalización de escuela primaria.</li>
+                <li>Fotocopia de DNI, CUIL, certificado de nacimiento y vacunas del alumno.</li>
+                <li>Fotocopia de DNI y CUIL de padre/madre/tutor.</li>
+                <li>Ficha de inscripción (Asoc. Coop. las entregará en la escuela en el momento de la inscripción). Traer lapicera azul.</li>
+            </ul>
+        </div>
+        <div class="footer">
+            <p><strong>Bono Contribución ASOC.COOP: $15.000</strong></p>
+        </div>
+    </div>
+        <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d342.79939546572814!2d-58.75598576555136!3d-34.5286220803717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc97f414040221%3A0x8ccbf69b59ce9050!2sE.E.S.T%20N%C2%B02!5e1!3m2!1ses!2sar!4v1728591012417!5m2!1ses!2sar" 
+        width="100%" 
+        height="510" 
+        title="Mapa de la ubicación del colegio" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+    
+    </article>
+
+
+      <!-- Footer -->
+      <footer>
+        <p>&copy; 2024 Inicio - Tesla</p>
+    </footer>
+
+</body>
+</html>

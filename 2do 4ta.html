@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="search.css">
+    <link rel="stylesheet" href="todoscursos.css">
+    <script src="data.js" defer></script>
+    <link rel="icon" href="tesla escudo.jpg" type="image/x-icon">
+    <title>2da 4ta - Tesla</title>
+</head>
+<body>
+    <header>
+        <div class="header2">
+            <img src="tesla escudo.jpg" alt="escudo de tecnica" class="img-tesla" onclick="openImage()">
+            <h1 class="titulo">E.E.S.T N°2 <br> TESLA</h1>
+        </div>
+        
+        <!-- Modal para la imagen -->
+        <div class="modal" id="modal" onclick="closeImage()">
+            <div class="modal-content" onclick="event.stopPropagation()"> <!-- Esto evita que el clic en la imagen cierre el modal -->
+                <img src="tesla escudo.jpg" alt="escudo de tecnica" class="modal-img">
+                <button class="close-btn" onclick="closeImage()">✖</button>
+            </div>
+        </div>
+        
+
+        <div class="search-container">
+            <input class="input" type="text" placeholder="Buscar...">
+            <svg viewBox="0 0 24 24" class="search__icon" id="search-button" style="cursor: pointer;">
+                <g>
+                    <path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path>
+                </g>
+            </svg>
+            <button class="close-search" style="display: none;">✖</button>
+            <p class="search-message" style="display: none; color: red;">
+                La búsqueda no ha sido encontrada, ¡intente de nuevo, por favor!
+                <button class="close-message" style="background: none; border: none; color: blue; cursor: pointer;">Cerrar</button>
+            </p>
+        </div>
+        
+
+    <nav>
+        <ul>
+            <li><a href="index.html"><button>INICIO</button></a></li>
+            <li onclick="openModal('alumnos')"><button>ALUMNOS</button></li>
+            <li onclick="openModal('materias')"><button>MATERIAS</button></li>
+            <li onclick="openModal('servicios')"><button>SERVICIOS</button></li>
+            <li onclick="openModal('nosotros')"><button>NOSOTROS</button></li>
+        </ul>
+    
+        <!-- Modales -->
+        <!-- Modal para Alumnos -->
+        <div id="alumnos-modal" class="modal-nav">
+            <div class="modal-content-nav">
+                <span class="close-nav" onclick="closeModal('alumnos')">&times;</span>
+                <h2>Alumnos</h2>
+                <ul>
+                    <li><a href="cd.html">Centro Estudiantes</a></li>
+                    <li><a href="cursos.html">Cursos</a></li>
+                    <li><a href="novedades.html">Novedades</a></li>
+                    <li><a href="previas.html">Previas</a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <!-- Modal para Materias -->
+        <div id="materias-modal" class="modal-nav">
+            <div class="modal-content-nav">
+                <span class="close-nav" onclick="closeModal('materias')">&times;</span>
+                <h2>Materias</h2>
+                <ul>
+                    <li><a href="inscripciones.html">Especialidad</a></li>
+                    <li><a href="intensificacion.html">Intensificación</a></li>
+                    <li><a href="calendario.html">Calendario</a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <!-- Modal para Servicios -->
+        <div id="servicios-modal" class="modal-nav">
+            <div class="modal-content-nav">
+                <span class="close-nav" onclick="closeModal('servicios')">&times;</span>
+                <h2>Servicios</h2>
+                <ul>
+                    <li><a href="secretaria.html">Secretaria</a></li>
+                    <li><a href="recepcion.html">Recepción</a></li>
+                    <li><a href="comunicados.html">Comunicados</a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <!-- Modal para Nosotros -->
+        <div id="nosotros-modal" class="modal-nav">
+            <div class="modal-content-nav">
+                <span class="close-nav" onclick="closeModal('nosotros')">&times;</span>
+                <h2>Nosotros</h2>
+                <ul>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="nikolatesla.html">Nikola Tesla</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div class="schedule">
+    <h2>Horario de 2do 4ta</h2>
+
+    <div class="day">
+        <h2>Lunes (Aula)</h2>
+        <div class="class">7:20 - 9:20: </div>
+        <div class="class recess">9:20 - 9:40: Recreo</div>
+        <div class="class">9:40 - 11:40: </div>
+    </div>
+
+    <div class="day">
+        <h2>Martes (Aula)</h2>
+        <div class="class">7:20 - 9:20: </div>
+        <div class="class recess">9:20 - 9:40: Recreo</div>
+        <div class="class">9:40 - 11:40: </div>
+    </div>
+
+    <div class="day">
+        <h2>Miércoles (Aula)</h2>
+        <div class="class">7:20 - 9:20: </div>
+        <div class="class recess">9:20 - 9:40: Recreo</div>
+        <div class="class">9:40 - 11:40: </div>
+    </div>
+
+    <div class="day">
+        <h2>Jueves (Aula)</h2>
+        <div class="class">7:20 - 9:20: </div>
+        <div class="class recess">9:20 - 9:40: Recreo</div>
+        <div class="class">9:40 - 11:40: </div>
+    </div>
+
+    <div class="day">
+        <h2>Viernes (Aula)</h2>
+        <div class="class">7:20 - 9:20: </div>
+        <div class="class recess">9:20 - 9:40: Recreo</div>
+        <div class="class">9:40 - 11:40: </div>
+    </div>
+
+    <div class="group">
+        <h3>Grupo A</h3>
+        <div class="day">
+            <h4>Lunes</h4>
+            <div class="class">13:00 - 15:00: </div>
+            <div class="class recess">Recreo: 15:20 - 15:40</div>
+            <div class="class">15:40 - 17:20: </div>
+        </div>
+        <div class="day">
+            <h4>Martes</h4>
+            <div class="class">13:00 - 15:00: </div>
+            <div class="class recess">Recreo: 15:20 - 15:40</div>
+            <div class="class">15:40 - 17:20: </div>
+        </div>
+        <div class="day">
+            <h4>Miércoles</h4>
+            <div class="class">13:00 - 15:00: </div>
+            <div class="class recess">Recreo: 15:20 - 15:40</div>
+            <div class="class">15:40 - 17:20: </div>
+        </div>
+        <div class="day">
+            <h4>Jueves</h4>
+            <div class="class">13:00 - 15:00: </div>
+            <div class="class recess">Recreo: 15:20 - 15:40</div>
+            <div class="class">15:40 - 17:20: </div>
+        </div>
+        <div class="day">
+            <h4>Viernes</h4>
+            <div class="class">13:00 - 15:00: </div>
+            <div class="class recess">Recreo: 15:20 - 15:40</div>
+            <div class="class">15:40 - 17:20: </div>
+        </div>
+    </div>
+
+    <div class="group">
+        <h3>Grupo B</h3>
+        <div class="day">
+            <h4>Lunes</h4>
+            <div class="class">13:00 - 15:00: </div>
+            <div class="class recess">Recreo: 15:20 - 15:40</div>
+            <div class="class">15:40 - 17:20: </div>
+        </div>
+        <div class="day">
+            <h4>Martes</h4>
+            <div class="class">13:00 - 15:00: </div>
+            <div class="class recess">Recreo: 15:20 - 15:40</div>
+            <div class="class">15:40 - 17:20: </div>
+        </div>
+        <div class="day">
+            <h4>Miércoles</h4>
+            <div class="class">15:40 - 17:20: </div>
+        </div>
+        <div class="day">
+            <h4>Jueves</h4>
+            <div class="class">13:00 - 15:00: </div>
+            <div class="class recess">Recreo: 15:20 - 15:40</div>
+            <div class="class">15:40 - 17:20: </div>
+        </div>
+        <div class="day">
+            <h4>Viernes</h4>
+            <div class="class">13:00 - 15:00: </div>
+            <div class="class recess">Recreo: 15:20 - 15:40</div>
+            <div class="class">15:40 - 17:20: </div>
+        </div>
+    </div>
+</div>
+
+
+         <!-- Footer -->
+         <footer>
+            <p>&copy; 2024 2do 4ta - Tesla</p>
+        </footer>
+
+        <script src="NODE.js"></script>
+</body>
+</html>

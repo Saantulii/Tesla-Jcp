@@ -1,0 +1,312 @@
+/*---------------------------- ESTILOS GENERALES ----------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: black;
+  width: 100%;
+}
+
+header .header2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*---------------------------- IMAGEN TESLA ----------------------------*/
+.img-tesla {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  margin: 10px 0px 10px 10px;
+  width: 100px;
+  height: auto;
+}
+
+/*---------------------------- MODAl para img  ----------------------------*/
+.modal {
+  display: none; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.modal.show {
+  display: flex;
+  opacity: 1;
+}
+
+.modal-content {
+  position: relative;
+  max-width: 80%;
+  max-height: 80%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.modal-img {
+  max-width: 100%;
+  max-height: 100%;
+  transition: transform 0.5s ease-in-out;
+  margin: 20px;
+}
+
+.modal-img.expand {
+  transform: scale(1.5);
+}
+
+.close-btn {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  z-index: 10000;
+}
+
+/*---------------------------- NAVIGATION ----------------------------*/
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between; /* Distribuye los elementos uniformemente */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%; /* Asegura que ocupe todo el ancho del nav */
+}
+
+nav ul li {
+  flex-grow: 1; /* Cada <li> ocupa el mismo espacio */
+  text-align: center; /* Centra el contenido dentro de cada <li> */
+}
+
+nav button, ul li a button {
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #007BFF;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+nav button:hover, ul li a button:hover {
+  background-color: #0056b3;
+}
+
+.modal-nav {
+  display: none; /* Inicialmente oculto */
+  position: fixed; /* Fijo para que se quede en la pantalla */
+  top: 0px;
+  left: 0px;
+  padding: 250px 250px 300px 300px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo translúcido */
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Asegura que el modal esté por encima de otros elementos */
+  overflow: auto;
+}
+
+/* Estilos del contenido del modal */
+.modal-content-nav {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 600px; /* Ancho máximo */
+  position: relative;
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* Animación de entrada del modal */
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+      transform: translateY(-300px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Estilo para el botón de cierre */
+.close-nav {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+  color: #333;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+/* Animación de cierre del modal */
+@keyframes close {
+  0% {
+    opacity: 1;
+    transform: translateY(0);  /* Empieza en su posición original */
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-300px);  /* Se mueve hacia arriba y desaparece */
+  }
+}
+
+/* Cuando el modal está en proceso de cierre, se aplica la animación */
+.modal-nav.closing {
+  animation: close 0.5s ease-in-out;  /* Animación de cierre */
+}
+
+/* Estilos adicionales para el contenido dentro del modal */
+.modal-content-nav h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.modal-content-nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.modal-content-nav ul li {
+  margin-bottom: 10px;
+}
+
+.modal-content-nav ul li a {
+  border: 1px solid blue;
+  padding: 10px;
+  color: #007BFF;
+  text-decoration: none;
+  font-size: 23px;
+  transition: color 0.3s;
+}
+
+/* Efecto de cambio de color de los enlaces al pasar el ratón */
+.modal-content-nav ul li a:hover {
+  color: black;
+  background-color: wheat;
+}
+
+/*---------------------------- TITULOS Y BOTONES ----------------------------*/
+.titulo {
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 25px;
+  color: white;
+  margin-top: 25px;
+}
+
+.search-container {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  width: 30%;
+}
+
+
+/*---------------------------- FOOTER ----------------------------*/
+footer {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  background: #333;
+  color: white;
+  margin-top: 40px;
+}
+
+footer a{
+  text-decoration: none;
+  color: white;
+}
+
+footer a:hover{
+  color: wheat;
+}
+
+/*---------------------------- MEDIA QUERIES ----------------------------*/
+@media (max-width: 800px) {
+  /* Modificar el diseño del nav para que sea horizontal y permita que los elementos se envuelvan */
+  nav ul {
+    flex-direction: row; /* Mantener la distribución en fila (horizontal) */
+    justify-content: center; /* Centra los elementos dentro del nav */
+    align-items: center; /* Alinea los elementos en el centro verticalmente */
+    width: auto; /* El ancho del contenedor es automático */
+    margin: 0; /* Elimina márgenes para evitar espacio extra */
+    flex-wrap: wrap; /* Permite que los elementos se pasen a la siguiente fila */
+  }
+
+  nav ul li {
+    text-align: center; /* Alinea el contenido dentro de cada <li> */
+    padding: 5px 10px; /* Añadir algo de espacio alrededor de los elementos */
+    flex-grow: 1; /* Permite que los elementos crezcan y ocupen todo el ancho disponible */
+  }
+
+  /* Asegurarse de que los botones ocupen solo el espacio necesario */
+  nav button {
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    transition: background-color 0.3s ease;
+    width: auto; /* Asegura que el botón ocupe solo el espacio necesario */
+  }
+
+  nav button:hover {
+    background-color: #0056b3;
+  }
+
+  /* Ajustar el modal de navegación para pantallas pequeñas */
+  .modal-nav {
+    position: absolute; /* Cambio de posición para que se ajuste en pantallas pequeñas */
+    top: 10%; /* Ajuste de la posición vertical */
+    left: 0;
+    width: 100%; /* El modal ocupa todo el ancho disponible */
+    padding: 10px;
+  }
+
+  .modal-content-nav {
+    width: 100%; /* Hace que el contenido del modal ocupe todo el ancho */
+    max-width: 100%; /* No se va a sobreponer en pantallas pequeñas */
+    padding: 15px;
+  }
+
+  /* Estilos para el contenido dentro del modal */
+  .modal-content-nav ul li {
+    display: inline-block; /* Los elementos del menú se muestran en línea */
+    margin-right: 10px; /* Espaciado entre los elementos */
+  }
+
+  /* Ajustar los enlaces del modal */
+  .modal-content-nav ul li a {
+    font-size: 18px; /* Mejorar la legibilidad */
+  }
+}

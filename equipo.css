@@ -1,0 +1,129 @@
+/* Estructura General */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor-principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.autoridades-container {
+    min-height: 100vh;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 90%;
+}
+
+h2 {
+    padding: 10px;
+    color: black;
+    text-align: center;
+}
+
+/* Estructura de la Pirámide */
+.autoridades-piramide {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.elevator-floor {
+    display: flex;
+    justify-content: center;
+    gap: 25px; /* Espacio entre los elementos de un nivel */
+}
+
+.autority {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.autority:hover {
+    transform: scale(1.1); /* Efecto de aumento al pasar el ratón */
+}
+
+.img-qsy {
+    width: 80px;
+    height: 80px;
+    background: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Estilo del Modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal.show {
+    display: flex;
+}
+
+.el-amor-q-no-le-declare-a-ella {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+    max-width: 600px;
+    width: 80%;
+}
+
+h3 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+p {
+    color: #555;
+    font-size: 16px;
+}
+
+.chau.btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.modal-img-autoridades{
+    width: 100px; /* Ajusta el tamaño de la imagen */
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}

@@ -1,0 +1,123 @@
+.container-inscripciones{
+    width: 90%;
+    max-width: 750px;
+    margin: 20px auto;
+    background: linear-gradient(to bottom, #003366, #0066cc);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Encabezado */
+.header-inscripciones{
+    text-align: center;
+    border-bottom: 2px solid white;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 100px;
+    max-width: 20%;
+    margin-bottom: 10px;
+}
+
+h1, h2 {
+    margin: 5px 0;
+}
+
+h1 {
+    font-size: 1.8rem;
+}
+
+h2 {
+    font-size: 1.2rem;
+}
+
+/* Contenido */
+.content-inscripciones p {
+    margin-bottom: 15px;
+    font-size: 1rem;
+    text-align: justify;
+}
+
+.content ul {
+    padding-left: 20px;
+}
+
+.content-inscripciones ul li {
+    margin-bottom: 5px;
+}
+
+a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Pie de página */
+.footer {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+/* Media queries para diseño responsivo */
+
+/* Para tablets y pantallas medianas (hasta 768px) */
+@media (max-width: 768px) {
+    .header-inscripciones {
+        padding-bottom: 15px;
+    }
+
+    .logo {
+        width: 80px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    .content-inscripciones p {
+        font-size: 0.95rem;
+    }
+
+    .footer {
+        font-size: 1rem;
+    }
+}
+
+/* Para móviles y pantallas pequeñas (hasta 480px) */
+@media (max-width: 480px) {
+    .container-inscripciones {
+        padding: 15px;
+    }
+
+    .logo {
+        width: 60px;
+    }
+
+    h1 {
+        font-size: 1.3rem;
+    }
+
+    h2 {
+        font-size: 0.9rem;
+    }
+
+    .content-inscripciones p, .content-inscripciones ul li {
+        font-size: 0.9rem;
+    }
+
+    .footer {
+        font-size: 0.9rem;
+    }
+}
